@@ -69,6 +69,10 @@ ol {
 .content__list-container {
   height: 298px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
 }
 .content__details {
   width: 100%;
@@ -76,12 +80,18 @@ ol {
 }
 .title {
   margin-bottom: 26px;
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
 }
 .result__video-container {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
   overflow: hidden;
+  position: relative;
 }
 .result__video-container video {
   width: 100%;
@@ -89,11 +99,6 @@ ol {
   object-fit: cover;
 }
 .content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.content__list-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -120,20 +125,9 @@ ol {
   font-weight: 400;
   padding-bottom: 5px;
 }
-.title {
-  font-family: "Oswald", sans-serif;
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 94%;
-  text-transform: uppercase;
-}
 
 .content__accent {
   color: #545050;
-}
-.content__card-link {
-  text-decoration: none;
-  color: #fff;
 }
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
@@ -281,6 +275,8 @@ ol {
 /* card condition */
 
 .content__card-link {
+  text-decoration: none;
+  color: #fff;
   display: block;
   cursor: pointer;
 }
@@ -304,11 +300,4 @@ ol {
   padding: 3px;
 }
 
-/* position */
 
-.result__video-container {
-  position: relative;
-}
-.content__list-container {
-  position: relative;
-}
